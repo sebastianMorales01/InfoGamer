@@ -1,9 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".DetailActivity">
+    android:background="#ffff"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".DetailActivity"
+        android:background="#ffff"
+        >
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:src="@drawable/logo2"
+            android:id="@+id/logo"
+            android:layout_marginVertical="10dp"
+            android:layout_alignParentLeft="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/detail_date"
+            android:layout_marginBottom="10dp"
+            android:text="2020-2020-2020"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/logo"
+            android:paddingRight="20sp"
+            android:textColor="#E91E1E"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/detail_author"
+            android:layout_marginBottom="10dp"
+            android:text="Ebenizer pinedo"
+            android:layout_below="@id/logo"
+            android:paddingLeft="20sp"
+            android:textColor="#3193DD"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/a"
+            android:id="@+id/detail_photo"
+            android:layout_below="@id/detail_date"
+            android:scaleType="centerCrop"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/detail_title"
+            android:text="Apple desactivará “Sign in with Apple” en las cuentas de Epic Games"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_below="@id/detail_photo"
+            android:layout_marginVertical="16sp"
+            android:paddingHorizontal="20sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/detail_desc"
+            android:text="¿Pensaste que hoy no verías información sobre el conflicto entre Apple y Epic Games? Estabas equivocado. Los responsables de Fortnite dieron a conocer que, a partir del viernes 11 de septiembre, Apple desactivará el soporte para \Sign in with Apple\ en las cu…"
+            android:layout_below="@id/detail_title"
+            android:textSize="18sp"
+            android:layout_marginBottom="16sp"      android:paddingHorizontal="20sp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/detail_url"
+            android:text="www.asd.com"
+            android:layout_below="@id/detail_desc"
+            android:textColor="#3193DD"
+            android:paddingHorizontal="20sp"
+            />
+<!-- hola XD -->
+
+
+
+    </RelativeLayout>
+
+</ScrollView>
