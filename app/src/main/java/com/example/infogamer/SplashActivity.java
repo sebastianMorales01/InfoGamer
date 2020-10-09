@@ -1,4 +1,4 @@
-package com.example.infogamer.model;
+package com.example.infogamer;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,8 +9,6 @@ import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.os.Handler;
 
-import com.example.infogamer.R;
-
 public class SplashActivity extends AppCompatActivity {
 
     @Override
@@ -20,7 +18,7 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void run() {
                 if (hayInternet()){
-                    Intent intent = new Intent(SplashActivity.this,LoginActivity.class);
+                    Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
                     startActivity(intent);
                     finish();
 

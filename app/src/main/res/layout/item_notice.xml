@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="270dp"
+    android:id="@+id/item_card"
+    android:layout_marginHorizontal="10dp"
+    android:elevation="10dp"
+    android:background="@drawable/item_selected"
+    android:layout_marginBottom="10dp"
+
+    >
+
+    <ImageView
+        android:id="@+id/item_img"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/a"
+        />
+
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_alignBottom="@id/item_img"
+        android:layout_marginTop="106dp"
+        android:paddingHorizontal="14dp"
+        android:paddingTop="5dp"
+        android:shadowColor="#000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="2.5"
+        android:text="Apple desactivará “Sign in with Apple” en las cuentas de Epic Games sasdasdasdasd asdasd asdasd asd"
+        android:textColor="#ffff"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/item_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_title"
+        android:layout_marginTop="10dp"
+        android:paddingHorizontal="14dp"
+        android:text="¿Pensaste que hoy no verías información sobre el conflicto entre Apple y Epic Games? Estabas equivocado. Los responsables de Fortnite dieron a conocer que, a partir del viernes 11 de septiembre, Apple desactivará el soporte para \Sign in with Apple\ en las cu…"
+        android:textSize="13sp" />
+
+
+</RelativeLayout>

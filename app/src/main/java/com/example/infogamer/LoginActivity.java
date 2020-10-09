@@ -1,4 +1,4 @@
-package com.example.infogamer.model;
+package com.example.infogamer;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.infogamer.AboutUsActivity;
 import com.example.infogamer.MainActivity;
 import com.example.infogamer.R;
 
@@ -37,7 +38,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void bt_aboutUs(View view) {
-        Intent i = new Intent(this,AboutUsActivity.class);
+        Intent i = new Intent(this, AboutUsActivity.class);
         startActivity(i);
     }
 }

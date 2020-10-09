@@ -1,4 +1,4 @@
-package com.example.infogamer.model;
+package com.example.infogamer;
 
 import androidx.appcompat.app.AppCompatActivity;
 
